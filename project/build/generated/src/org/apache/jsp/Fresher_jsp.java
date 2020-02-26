@@ -1,0 +1,277 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class Fresher_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>Welcome to...</title>\n");
+      out.write("        <style>\n");
+      out.write("            body{\n");
+      out.write("                background-color: activecaption;\n");
+      out.write("            }\n");
+      out.write("            .autostyle2{\n");
+      out.write("                color: red;\n");
+      out.write("                font-size: 20px;\n");
+      out.write("                text-align: center;\n");
+      out.write("                font-weight: bolder;\n");
+      out.write("            }\n");
+      out.write("            #button{\n");
+      out.write("                margin-left: 50px;\n");
+      out.write("            }\n");
+      out.write("            img{\n");
+      out.write("                float: right;\n");
+      out.write("            }\n");
+      out.write("             .wel{\n");
+      out.write("                font-family: fantasy;\n");
+      out.write("                font-style: italic;\n");
+      out.write("                font-weight: bolder;\n");
+      out.write("                font-size: 250%;\n");
+      out.write("                background-color: black;\n");
+      out.write("                color: wheat;\n");
+      out.write("            }\n");
+      out.write("            .wel:hover{\n");
+      out.write("                width: 400px;\n");
+      out.write("                -webkit-transition: width 4s;\n");
+      out.write("            }\n");
+      out.write("         </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body style=\"padding:20px 300px 100px 200px;color:black;font-weight: bolder\">\n");
+      out.write("        <form method=\"post\" action=\"RegisFreshers\" target=\"ContentFrame\">\n");
+      out.write("            <table>\n");
+      out.write("                <tr class=\"autostyle2\">\n");
+      out.write("                    <td colspan=\"2\"><div class=\"wel\"><center>Register</center></div></td>\n");
+      out.write("                    <td>\n");
+      out.write("                        <img src=\"H:\\CandidateProject\\Images\\register.jpg\" alt=\"\" width=\"100\" height=\"100\"/>\n");
+      out.write("                    </td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr style=\"height:20px\">\n");
+      out.write("                    <td WIDTH=\"80%\" colspan=\"4\">\n");
+      out.write("                    </td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td> Name:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td><input type=\"text\" autocomplete=\"off\" autofocus name=\"username\" placeholder=\"Enter your name\" required></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>DOB:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td><input type=\"date\" name=\"date\" required></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>Gender:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td>Male<input type=\"radio\" name=\"rd\" value=\"M\">\n");
+      out.write("                        Female<input type=\"radio\" name=\"rd\" value=\"F\">\n");
+      out.write("                    </td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                <td>Email ID:<span style=\"color: red\">*</span></td>\n");
+      out.write("                <td><input type=\"email\" autocomplete=\"off\" name=\"usermail\" placeholder=\"Enter your email id\" required></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                <td>Contact Number:<span style=\"color: red\">*</span></td>\n");
+      out.write("                <td><input type=\"tel\" autocomplete=\"off\" name=\"usertel\" placeholder=\"Enter your phone number\" required></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr><td>Password:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td><input type=\"password\" name=\"password\" pattern=\"[A-Za-z0-9]{8}\" title=\"Eight Letter\" placeholder=\"(Upper,Lower,Numbers)8Letters\" required></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>Current City:</td>\n");
+      out.write("                    <td><select>\n");
+      out.write("                            <option value=\"opt1\">Select Your City</option>\n");
+      out.write("                            <option value=\"opt2\">Bangalore</option>\n");
+      out.write("                            <option value=\"opt3\">Chennai</option>\n");
+      out.write("                            <option value=\"opt4\">Coimbatore</option>\n");
+      out.write("                            <option value=\"opt5\">Delhi</option>\n");
+      out.write("                            <option value=\"opt6\">Kolkata</option>\n");
+      out.write("                            <option value=\"opt7\">Mumbai</option>\n");
+      out.write("                            <option value=\"opt8\">Pune</option>\n");
+      out.write("                        </select></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>Year of Experience:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td><input type=\"number\" name=\"Exp\" placeholder=\"Enter your year of Experience\" required></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>Highest Qualification Details:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td><select>\n");
+      out.write("                            <option value=\"opt9\">Select Your Degree</option>\n");
+      out.write("                            <option value=\"opt10\">BE/BTech</option>\n");
+      out.write("                            <option value=\"opt11\">BSc</option>\n");
+      out.write("                            <option value=\"opt12\">Diploma</option>\n");
+      out.write("                            <option value=\"opt13\">MBA/PGDM</option>\n");
+      out.write("                            <option value=\"opt14\">MCA</option>\n");
+      out.write("                            <option value=\"opt15\">ME/MTech</option>\n");
+      out.write("                            <option value=\"opt16\">MSc</option>\n");
+      out.write("                            <option value=\"opt17\">other</option>\n");
+      out.write("                        </select></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>Branch:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td><select>\n");
+      out.write("                            <option value=\"opt18\">Select Your Branch</option>\n");
+      out.write("                            <optgroup label=\"BE/BTech\">\n");
+      out.write("                            <option value=\"opt19\">Aeronautical/Aerospace Engineering</option>\n");
+      out.write("                            <option value=\"opt20\">Agricultural/Irrigation Engineering</option>\n");
+      out.write("                            <option value=\"opt21\">Automobile Engineering</option>\n");
+      out.write("                            <option value=\"opt22\">Chemical Engineering</option>\n");
+      out.write("                            <option value=\"opt23\">Civil Engineering</option>\n");
+      out.write("                            <option value=\"opt24\">Computer Science Engineering(CSE)</option>\n");
+      out.write("                            <option value=\"opt25\">Electronics and Communication Engineering(ECE)</option>    \n");
+      out.write("                            <option value=\"opt26\">Electrical and Electronics Engineering(EEE)</option>\n");
+      out.write("                            <option value=\"opt27\">Electronics and Instrumentation Engineering(E&I)</option>\n");
+      out.write("                            <option value=\"opt28\">Fashion/Design Technology</option>\n");
+      out.write("                            <option value=\"opt29\">Information Technology(IT)</option>\n");
+      out.write("                            <option value=\"opt30\">Mechanical Engineering</option>\n");
+      out.write("                            <option value=\"opt31\">other</option>\n");
+      out.write("                            </optgroup>\n");
+      out.write("                            <optgroup label=\"Bsc\">\n");
+      out.write("                            <option value=\"opt32\">Computer Science</option>\n");
+      out.write("                            <option value=\"opt33\">other</option>\n");
+      out.write("                            </optgroup>\n");
+      out.write("                            <optgroup label=\"Diploma\">\n");
+      out.write("                            <option value=\"opt34\">Automobile Engineering</option>\n");
+      out.write("                            <option value=\"opt35\">Chemical Engineering</option>\n");
+      out.write("                            <option value=\"opt36\">Civil Engineering</option>\n");
+      out.write("                            <option value=\"opt37\">Computer Science Engineering</option>\n");
+      out.write("                            <option value=\"opt38\">Electronics and Communication Engineering</option>    \n");
+      out.write("                            <option value=\"opt39\">Electrical and Electronics Engineering</option>\n");
+      out.write("                            <option value=\"opt40\">Electronics and Instrumentation Engineering</option>\n");
+      out.write("                            <option value=\"opt41\">Fashion/Design Technology</option>\n");
+      out.write("                            <option value=\"opt42\">Information Technology(IT)</option>\n");
+      out.write("                            <option value=\"opt43\">Mechanical Engineering</option>\n");
+      out.write("                            <option value=\"opt44\">other</option>\n");
+      out.write("                            </optgroup>\n");
+      out.write("                            <optgroup label=\"MBA/PGDM\">\n");
+      out.write("                            <option value=\"opt45\">Administration</option>\n");
+      out.write("                            <option value=\"opt46\">Banking & Finance</option>\n");
+      out.write("                            <option value=\"opt47\">Executive</option>\n");
+      out.write("                            <option value=\"opt48\">General Management</option>\n");
+      out.write("                            <option value=\"opt49\">Human Resources</option>    \n");
+      out.write("                            <option value=\"opt50\">Information Technology</option>\n");
+      out.write("                            <option value=\"opt51\">Marketing</option>\n");
+      out.write("                            <option value=\"opt52\">other</option>\n");
+      out.write("                           </optgroup>\n");
+      out.write("                            <optgroup label=\"MCA\">\n");
+      out.write("                            <option value=\"opt53\">Computer Science</option>\n");
+      out.write("                            <option value=\"opt54\">other</option>\n");
+      out.write("                            <optgroup label=\"ME/MTech\">\n");
+      out.write("                            <option value=\"opt55\">Civil Engineering</option>\n");
+      out.write("                            <option value=\"opt56\">Computer Science and Engineering</option>\n");
+      out.write("                            <option value=\"opt57\">Chemical Engineering</option>\n");
+      out.write("                            <option value=\"opt58\">Electrical Engineering</option>\n");
+      out.write("                            <option value=\"opt59\">VLSI</option>    \n");
+      out.write("                            <option value=\"opt60\">Mechanical Engineering</option>\n");
+      out.write("                            <option value=\"opt61\">Electronics and Communication Engineering </option>\n");
+      out.write("                            <option value=\"opt62\">other</option>\n");
+      out.write("                           </optgroup>\n");
+      out.write("                            <optgroup label=\"MSc\">\n");
+      out.write("                            <option value=\"opt63\">Computer Science</option>\n");
+      out.write("                            <option value=\"opt64\">other</option>\n");
+      out.write("                        </select></td>\n");
+      out.write("                </tr>\n");
+      out.write("                <tr>\n");
+      out.write("                    <td>Passedout Year:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td>\n");
+      out.write("                        <input type=\"number\" name=\"yop\" min=\"1900\" max=\"2099\" step=\"1\" value=\"\" /></td>\n");
+      out.write("                    </tr>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>Marks:<span style=\"color: red\">*</span></td>\n");
+      out.write("                    <td>Percentage<input type=\"radio\" name=\"rd1\">\n");
+      out.write("                        CGPA(0 to 10)<input type=\"radio\" name=\"rd1\">\n");
+      out.write("                    </td>\n");
+      out.write("                    <td><input type=\"number\" name=\"marks\" placeholder=\"Enter your percentage\" required></td>\n");
+      out.write("                    </tr>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>Your College Details:<span style=\"color: red\">*</span></td>\n");
+      out.write("                        <td><input type=\"text\" name=\"college name\" placeholder=\"Institution Name\" required></td>\n");
+      out.write("                        <td><input type=\"text\" name=\"university name\" placeholder=\"University Name\" required></td>\n");
+      out.write("                    </tr>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>Class 12th Marks:<span style=\"color: red\">*</span></td>\n");
+      out.write("                        <td>I Have<input type=\"radio\" name=\"rd2\">\n");
+      out.write("                        I don't have<input type=\"radio\" name=\"rd2\">\n");
+      out.write("                    </td>\n");
+      out.write("                    <td><input type=\"number\" name=\"marks12\" placeholder=\"Enter your percentage\" required></td>\n");
+      out.write("                    </tr>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>Class 10th Marks:<span style=\"color: red\">*</span></td>\n");
+      out.write("                        <td><input type=\"number\" name=\"marks10\" placeholder=\"Enter your percentage\" required></td>\n");
+      out.write("                    </tr>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>Skills Sets:<span style=\"color: red\">*</span></td>\n");
+      out.write("                        <td><input type=\"text\" name=\"skills\" placeholder=\"Enter your skills\" required></td>\n");
+      out.write("                    </tr>\n");
+      out.write("                    <tr style=\"height:15px\">\n");
+      out.write("                    <td WIDTH=\"80%\" colspan=\"4\">\n");
+      out.write("                    </td>\n");
+      out.write("                </tr>\n");
+      out.write("                    <tr>\n");
+      out.write("                        <td>\n");
+      out.write("                            <input style=\"background-color: activecaption;color: blue\" id=\"button\" type=\"submit\" value =\"Submit\">\n");
+      out.write("                        </td>\n");
+      out.write("                        <td>\n");
+      out.write("                            <button style=\"background-color: activecaption;color: blue\" type=\"reset\"><B>Reset</b></button>\n");
+      out.write("                        </td>\n");
+      out.write("                    </tr>\n");
+      out.write("\n");
+      out.write("            </table>\n");
+      out.write("        </form>\n");
+      out.write("        \n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
